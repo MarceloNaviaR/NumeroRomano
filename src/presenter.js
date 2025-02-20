@@ -1,15 +1,12 @@
-import sumar from "./sumador";
+import convertirANumerosRomanos from './NumeroRomano';
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+function mostrarNumeroRomano() {
+    const inputNumero = document.getElementById('numeroInput').value;
+    const numero = parseInt(inputNumero, 10);
+    const resultado = convertirANumerosRomanos(numero);
+    document.getElementById('resultado').innerText = resultado;
+}
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+document.getElementById('convertirBtn').addEventListener('click', mostrarNumeroRomano);
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
-});
+export default mostrarNumeroRomano;
