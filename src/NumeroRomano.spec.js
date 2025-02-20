@@ -1,7 +1,8 @@
-import sumar from "./sumador.js";
+import convertirANumerosRomanos from './NumeroRomano';
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
-  });
+describe('Conversión a Números Romanos', () => {
+    test('Convierte 1 a I', () => {
+        expect(convertirANumerosRomanos(1)).toBe('I');
+    });
 });
+

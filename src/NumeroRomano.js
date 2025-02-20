@@ -1,5 +1,8 @@
-function sumar(a, b) {
-  return a + b;
+function convertirANumerosRomanos(numero) {
+  if (numero === 1) {
+      return 'I';
+  }
+  return '';
 }
 
-export default sumar;
+export default convertirANumerosRomanos;
