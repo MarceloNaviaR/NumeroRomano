@@ -1,4 +1,3 @@
-// NumeroRomano.spec.js
 import convertirANumerosRomanos from './NumeroRomano';
 
 describe('Conversión a Números Romanos', () => {
@@ -26,19 +25,19 @@ describe('Conversión a Números Romanos', () => {
         expect(convertirANumerosRomanos(6)).toBe('VI');
     });
 
-    test('Convierte 7 a VII', () => {
-        expect(convertirANumerosRomanos(7)).toBe('VII');
+    test('Convierte 11 a XI', () => {
+        expect(convertirANumerosRomanos(11)).toBe('XI');
     });
 
-    test('Convierte 8 a VIII', () => {
-        expect(convertirANumerosRomanos(8)).toBe('VIII');
+    test('Convierte 15 a XV', () => {
+        expect(convertirANumerosRomanos(15)).toBe('XV');
     });
 
-    test('Convierte 9 a IX', () => {
-        expect(convertirANumerosRomanos(9)).toBe('IX');
+    test('Convierte 20 a XX', () => {
+        expect(convertirANumerosRomanos(20)).toBe('XX');
     });
 
-    test('Convierte 10 a X', () => {
-        expect(convertirANumerosRomanos(10)).toBe('X');
+    test('Convierte 50 a L', () => {
+        expect(convertirANumerosRomanos(50)).toBe('L');
     });
 });

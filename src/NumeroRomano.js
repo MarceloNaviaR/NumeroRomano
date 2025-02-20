@@ -1,26 +1,27 @@
+// NumeroRomano.js
 function convertirANumerosRomanos(numero) {
-  if (numero === 1) {
-      return 'I';
-  } else if (numero === 2) {
-      return 'II';
-  } else if (numero === 3) {
-      return 'III';
-  } else if (numero === 4) {
-      return 'IV';
-  } else if (numero === 5) {
-      return 'V';
-  } else if (numero === 6) {
-      return 'VI';
-  } else if (numero === 7) {
-      return 'VII';
-  } else if (numero === 8) {
-      return 'VIII';
-  } else if (numero === 9) {
-      return 'IX';
-  } else if (numero === 10) {
-      return 'X';
+  const romanos = [
+      { valor: 50, simbolo: 'L' },
+      { valor: 40, simbolo: 'XL' },
+      { valor: 10, simbolo: 'X' },
+      { valor: 9, simbolo: 'IX' },
+      { valor: 5, simbolo: 'V' },
+      { valor: 4, simbolo: 'IV' },
+      { valor: 1, simbolo: 'I' },
+  ];
+
+  let resultado = '';
+  let valorRestante = numero;
+
+  for (const { valor, simbolo } of romanos) {
+      while (valorRestante >= valor) {
+          resultado += simbolo;
+          valorRestante -= valor;
+      }
   }
-  return '';
+
+  return resultado;
 }
 
 export default convertirANumerosRomanos;
+
