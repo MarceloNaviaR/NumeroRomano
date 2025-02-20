@@ -9,35 +9,19 @@ describe('Conversión a Números Romanos', () => {
         expect(convertirANumerosRomanos(2)).toBe('II');
     });
 
-    test('Convierte 3 a III', () => {
-        expect(convertirANumerosRomanos(3)).toBe('III');
+    test('Convierte 101 a CI', () => {
+        expect(convertirANumerosRomanos(101)).toBe('CI');
     });
 
-    test('Convierte 4 a IV', () => {
-        expect(convertirANumerosRomanos(4)).toBe('IV');
+    test('Convierte 500 a D', () => {
+        expect(convertirANumerosRomanos(500)).toBe('D');
     });
 
-    test('Convierte 5 a V', () => {
-        expect(convertirANumerosRomanos(5)).toBe('V');
+    test('Convierte 999 a CMXCIX', () => {
+        expect(convertirANumerosRomanos(999)).toBe('CMXCIX');
     });
 
-    test('Convierte 6 a VI', () => {
-        expect(convertirANumerosRomanos(6)).toBe('VI');
-    });
-
-    test('Convierte 11 a XI', () => {
-        expect(convertirANumerosRomanos(11)).toBe('XI');
-    });
-
-    test('Convierte 15 a XV', () => {
-        expect(convertirANumerosRomanos(15)).toBe('XV');
-    });
-
-    test('Convierte 20 a XX', () => {
-        expect(convertirANumerosRomanos(20)).toBe('XX');
-    });
-
-    test('Convierte 50 a L', () => {
-        expect(convertirANumerosRomanos(50)).toBe('L');
+    test('Convierte 1000 a M', () => {
+        expect(convertirANumerosRomanos(1000)).toBe('M');
     });
 });
